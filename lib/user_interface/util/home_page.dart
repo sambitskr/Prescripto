@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prescripto/about_us.dart';
 import 'package:prescripto/contact_us.dart';
-import 'package:prescripto/user_interface/settings.dart';
+import 'package:prescripto/user_interface/profile.dart';
 import 'package:prescripto/user_interface/upcoming_appoinments.dart';
 import 'package:prescripto/user_interface/util/category.dart';
 import 'package:prescripto/user_interface/util/doctor_list.dart';
@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
     HomePage(),
     ContactUsPage(),
     AboutUsPage(),
-    SettingsPage(),
+    ProfilePage(),
   ];
 
   @override
