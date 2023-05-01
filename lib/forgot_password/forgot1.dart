@@ -4,11 +4,12 @@ import 'package:quickalert/quickalert.dart';
 
 class ForgotPassword1 extends StatefulWidget {
   const ForgotPassword1({super.key});
-
-  @override
+  
+  @override             //Start
   State<ForgotPassword1> createState() => _ForgotPassword1State();
 }
 
+//Parameters editable
 class _ForgotPassword1State extends State<ForgotPassword1> {
   void showalert() {
     QuickAlert.show(
@@ -23,12 +24,15 @@ class _ForgotPassword1State extends State<ForgotPassword1> {
   }
 
   @override
+  //building widget
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
             image: AssetImage('images/black.jpg'), fit: BoxFit.cover),
       ),
+      
+      //editable
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -67,6 +71,8 @@ class _ForgotPassword1State extends State<ForgotPassword1> {
                 textAlign: TextAlign.center,
               ),
             ),
+            
+            //Email text fill
             Container(
               margin: const EdgeInsets.only(left: 35, right: 35),
               child: TextField(
@@ -84,6 +90,8 @@ class _ForgotPassword1State extends State<ForgotPassword1> {
             const SizedBox(
               height: 20,
             ),
+            
+            //Next button(to be added with next page)
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(200, 50),
