@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prescripto/about_us.dart';
 import 'package:prescripto/contact_us.dart';
 
 class AccountDetails extends StatefulWidget {
@@ -27,7 +28,7 @@ class _AccountDetailsState extends State<AccountDetails> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('images/register.png'), fit: BoxFit.cover),
+            image: AssetImage('images/register_upt.png'), fit: BoxFit.cover),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -60,22 +61,22 @@ class _AccountDetailsState extends State<AccountDetails> {
                         children: [
                           TextField(
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.black),
                             decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                   borderSide: const BorderSide(
                                     color: Colors.black,
                                   ),
                                 ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(
+                                      // color: Colors.black,
+                                      ),
+                                ),
                                 hintText: "User ID (Aadhaar No.)",
-                                hintStyle: const TextStyle(color: Colors.white),
+                                hintStyle: const TextStyle(color: Colors.black),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
@@ -84,12 +85,12 @@ class _AccountDetailsState extends State<AccountDetails> {
                             height: 30,
                           ),
                           TextField(
-                            style: const TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.black),
                             decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                   borderSide: const BorderSide(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                   ),
                                 ),
                                 focusedBorder: OutlineInputBorder(
@@ -99,7 +100,7 @@ class _AccountDetailsState extends State<AccountDetails> {
                                   ),
                                 ),
                                 hintText: "Address",
-                                hintStyle: const TextStyle(color: Colors.white),
+                                hintStyle: const TextStyle(color: Colors.black),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
@@ -109,12 +110,12 @@ class _AccountDetailsState extends State<AccountDetails> {
                           ),
                           TextField(
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.black),
                             decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                   borderSide: const BorderSide(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                   ),
                                 ),
                                 focusedBorder: OutlineInputBorder(
@@ -124,7 +125,7 @@ class _AccountDetailsState extends State<AccountDetails> {
                                   ),
                                 ),
                                 hintText: "Phone No.",
-                                hintStyle: const TextStyle(color: Colors.white),
+                                hintStyle: const TextStyle(color: Colors.black),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
@@ -142,18 +143,18 @@ class _AccountDetailsState extends State<AccountDetails> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(6),
                                   border: Border.all(
-                                      color: Colors.white, width: 2.0),
+                                      color: Colors.black, width: 2.0),
                                 ),
                                 child: DropdownButtonHideUnderline(
                                   child: DropdownButton<String>(
                                     hint: const Text(
                                       'Blood Group',
-                                      style: TextStyle(color: Colors.white),
+                                      style: TextStyle(color: Colors.black),
                                     ),
                                     value: value,
                                     iconSize: 36,
                                     icon: const Icon(Icons.arrow_drop_down,
-                                        color: Colors.white),
+                                        color: Colors.black),
                                     items:
                                         bloodgroups.map(buildMenuItem).toList(),
                                     onChanged: (value) =>
@@ -171,7 +172,7 @@ class _AccountDetailsState extends State<AccountDetails> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              const ContactUsPage(),
+                                              const AboutUsPage(),
                                         ),
                                       );
                                     },

@@ -21,7 +21,7 @@ class DoctorList extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
-          color: Colors.green[100],
+          color: Colors.green[200],
         ),
         child: Column(
           children: [

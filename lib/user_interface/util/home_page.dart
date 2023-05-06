@@ -15,38 +15,39 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int selectedindex = 0;
+  // int selectedindex = 0;
+  // GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
 
-  final screens = [
-    HomePage(),
-    ContactUsPage(),
-    AboutUsPage(),
-    ProfilePage(),
-  ];
+  // final screens = [
+  //   HomePage(),
+  //   ContactUsPage(),
+  //   AboutUsPage(),
+  //   ProfilePage(),
+  // ];
 
   @override
   Widget build(BuildContext context) {
-    final items = <Widget>[
-      Image.asset(
-        'images/home.png',
-        height: 30,
-      ),
-      Image.asset(
-        'images/prescription.png',
-        height: 30,
-      ),
-      Image.asset(
-        'images/testresult.png',
-        height: 30,
-      ),
-      Image.asset(
-        'images/settings.png',
-        height: 30,
-      ),
-    ];
+    // final items = <Widget>[
+    //   Image.asset(
+    //     'images/home.png',
+    //     height: 30,
+    //   ),
+    //   Image.asset(
+    //     'images/prescription.png',
+    //     height: 30,
+    //   ),
+    //   Image.asset(
+    //     'images/testresult.png',
+    //     height: 30,
+    //   ),
+    //   Image.asset(
+    //     'images/settings.png',
+    //     height: 30,
+    //   ),
+    // ];
 
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -78,15 +79,23 @@ class _HomePageState extends State<HomePage> {
                         )
                       ],
                     ),
-                    Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.green[100],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(50),
-                        child: Image.asset('images/Profile.jpg', height: 50),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ProfilePage()));
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.green[200],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(50),
+                          child: Image.asset('images/Profile.jpg', height: 50),
+                        ),
                       ),
                     ),
                   ],
@@ -100,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   padding: const EdgeInsets.all(7),
                   decoration: BoxDecoration(
-                    color: Colors.green[100],
+                    color: Colors.green[200],
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const TextField(
@@ -244,16 +253,70 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-        index: selectedindex,
-        backgroundColor: Colors.grey,
-        color: Colors.green.shade100,
-        animationDuration: const Duration(milliseconds: 400),
-        onTap: (index) {
-          setState(() => selectedindex = index);
-        },
-        items: items,
-      ),
+      // bottomNavigationBar: CurvedNavigationBar(
+      //   key: _bottomNavigationKey,
+      //   index: 0,
+      //   items: [
+      //     Image.asset(
+      //       'images/home.png',
+      //       height: 30,
+      //     ),
+      //     Image.asset(
+      //       'images/prescription.png',
+      //       height: 30,
+      //     ),
+      //     Image.asset(
+      //       'images/testresult.png',
+      //       height: 30,
+      //     ),
+      //     Image.asset(
+      //       'images/settings.png',
+      //       height: 30,
+      //     ),
+      //   ],
+      //   backgroundColor: Colors.grey,
+      //   color: Colors.green.shade100,
+      //   animationDuration: const Duration(milliseconds: 400),
+      //   onTap: (index) {
+      //     setState(() {
+      //       selectedindex = index;
+      //     });
+      //   },
+      //   letIndexChange: (index) => true,
+      // )
     );
   }
 }
+
+// class _bottomNavigation extends StatefulWidget {
+//   const _bottomNavigation({
+//     super.key,
+//     required this.onItemSelected,
+//   });
+
+//   final ValueChanged<int> onItemSelected;
+
+//   @override
+//   State<_bottomNavigation> createState() => __bottomNavigationState();
+// }
+
+// class __bottomNavigationState extends State<_bottomNavigation> {
+//   int selectedIndex = 0;
+
+//   void handleItemSelected(int index) {
+//     setState(() {
+//       selectedIndex = index;
+//     });
+//     widget.onItemSelected(index);
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return CurvedNavigationBar(
+//       backgroundColor: Colors.grey,
+//       color: Colors.green.shade100,
+//       animationDuration: const Duration(milliseconds: 400),
+//       items: [],
+//     );
+//   }
+// }

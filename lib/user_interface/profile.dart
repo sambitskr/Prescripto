@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfilePage extends StatelessWidget {
   @override
@@ -10,11 +11,17 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 'Profile',
-                style: TextStyle(color: Colors.black),
+                style: GoogleFonts.aBeeZee(
+                  color: Colors.black,
+                  fontSize: 40,
+                ),
               ),
-              const SizedBox(height: 16.0),
+              const SizedBox(height: 30.0),
               const CircleAvatar(
                 radius: 80.0,
                 backgroundImage: AssetImage('images/Profile.jpg'),
@@ -30,6 +37,17 @@ class ProfilePage extends StatelessWidget {
                 style: TextStyle(fontSize: 16.0, color: Colors.grey[600]),
               ),
               SizedBox(height: 16.0),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(30),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text("Edit Profile"),
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: Size(150, 50),
+                      backgroundColor: Colors.green),
+                ),
+              ),
+              SizedBox(height: 5),
               Divider(),
               SizedBox(height: 16.0),
               ListTile(
