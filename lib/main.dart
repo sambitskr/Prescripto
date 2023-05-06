@@ -15,7 +15,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AccountDetails(),
+      home: SplashPage(),
       routes: {
         'register': (context) => const MyRegister(),
         'login': (context) => const MyLogin(),

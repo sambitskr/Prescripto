@@ -63,23 +63,13 @@ class _AccountDetailsState extends State<AccountDetails> {
                             keyboardType: TextInputType.number,
                             style: const TextStyle(color: Colors.black),
                             decoration: InputDecoration(
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(
-                                      // color: Colors.black,
-                                      ),
-                                ),
-                                hintText: "User ID (Aadhaar No.)",
-                                hintStyle: const TextStyle(color: Colors.black),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                              fillColor: Colors.grey.shade100,
+                              filled: true,
+                              hintText: "User ID (Aadhaar No.)",
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           ),
                           const SizedBox(
                             height: 30,
@@ -87,23 +77,13 @@ class _AccountDetailsState extends State<AccountDetails> {
                           TextField(
                             style: const TextStyle(color: Colors.black),
                             decoration: InputDecoration(
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                                hintText: "Address",
-                                hintStyle: const TextStyle(color: Colors.black),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                              fillColor: Colors.grey.shade100,
+                              filled: true,
+                              hintText: "Address",
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           ),
                           const SizedBox(
                             height: 30,
@@ -112,23 +92,13 @@ class _AccountDetailsState extends State<AccountDetails> {
                             keyboardType: TextInputType.number,
                             style: const TextStyle(color: Colors.black),
                             decoration: InputDecoration(
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                                hintText: "Phone No.",
-                                hintStyle: const TextStyle(color: Colors.black),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                              fillColor: Colors.grey.shade100,
+                              filled: true,
+                              hintText: "Phone No.",
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           ),
                           const SizedBox(
                             height: 30,

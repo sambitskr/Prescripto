@@ -15,11 +15,11 @@ class _ContactUsPageState extends State<ContactUsPage> {
     QuickAlert.show(
       context: context,
       title: "Sent",
-      titleColor: Colors.white,
-      backgroundColor: const Color.fromARGB(255, 58, 60, 60),
+      titleColor: Colors.black,
+      backgroundColor: Colors.white,
       text:
           "Thank You! We will try to reply all those who reach out to us via Email.",
-      textColor: Colors.white,
+      textColor: Colors.black,
       type: QuickAlertType.success,
     );
   }
@@ -75,22 +75,13 @@ class _ContactUsPageState extends State<ContactUsPage> {
                     TextField(
                       style: const TextStyle(color: Colors.black),
                       decoration: InputDecoration(
-                          fillColor: Colors.grey.shade100,
-                          filled: true,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: const BorderSide(),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: const BorderSide(
-                              color: Colors.black,
-                            ),
-                          ),
-                          hintText: "Name",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          )),
+                        fillColor: Colors.grey.shade100,
+                        filled: true,
+                        hintText: "Name",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
                     ),
                     const SizedBox(
                       height: 30,
@@ -98,22 +89,13 @@ class _ContactUsPageState extends State<ContactUsPage> {
                     TextField(
                       style: const TextStyle(color: Colors.black),
                       decoration: InputDecoration(
-                          fillColor: Colors.grey.shade100,
-                          filled: true,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: const BorderSide(),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: const BorderSide(
-                              color: Colors.black,
-                            ),
-                          ),
-                          hintText: "Email Address",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          )),
+                        fillColor: Colors.grey.shade100,
+                        filled: true,
+                        hintText: "Email Address",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
                     ),
                     const SizedBox(
                       height: 30,
@@ -121,22 +103,13 @@ class _ContactUsPageState extends State<ContactUsPage> {
                     TextField(
                       style: const TextStyle(color: Colors.black),
                       decoration: InputDecoration(
-                          fillColor: Colors.grey.shade100,
-                          filled: true,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: const BorderSide(),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: const BorderSide(
-                              color: Colors.black,
-                            ),
-                          ),
-                          hintText: "Message",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          )),
+                        fillColor: Colors.grey.shade100,
+                        filled: true,
+                        hintText: "Message",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
                     ),
                     const SizedBox(
                       height: 20,
@@ -144,7 +117,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(200, 50),
-                          backgroundColor: Colors.blue,
+                          backgroundColor: Colors.green,
                         ),
                         onPressed: () {
                           showalert();

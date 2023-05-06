@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prescripto/forgot_password/forgot1.dart';
+import 'package:prescripto/user_interface/bottomNavBar.dart';
 import 'package:prescripto/user_interface/util/home_page.dart';
 
 class MyLogin extends StatefulWidget {
@@ -106,7 +107,7 @@ class _MyLoginState extends State<MyLogin> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const HomePage()));
+                                                  const bottomNavBar()));
                                     },
                                     icon: const Icon(
                                       Icons.arrow_forward,
