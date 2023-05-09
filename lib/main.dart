@@ -6,7 +6,7 @@ import 'package:prescripto/registar.dart';
 import 'package:prescripto/splash.dart';
 import 'package:prescripto/user_interface/bottomNavBar.dart';
 import 'package:prescripto/user_interface/profile.dart';
-import 'package:prescripto/user_interface/settings.dart';
+import 'package:prescripto/user_interface/settings/settings.dart';
 import 'package:prescripto/user_interface/util/home_page.dart';
 
 import 'login.dart';

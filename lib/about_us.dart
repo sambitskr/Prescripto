@@ -40,12 +40,10 @@ class AboutUsPage extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(50.0),
-                child: ClipRRect(
-                    borderRadius: BorderRadius.circular(100),
-                    child: Image.asset(
-                      'images/logo_smol.png',
-                      height: 170,
-                    )),
+                child: Image.asset(
+                  'images/logo.png',
+                  height: 170,
+                ),
               ),
               Text(
                 'Prescripto',

@@ -1,8 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:prescripto/contact_us.dart';
-import 'package:prescripto/user_interface/profile.dart';
-import 'package:prescripto/user_interface/settings.dart';
+import 'package:prescripto/user_interface/settings/settings.dart';
 import 'package:prescripto/user_interface/util/home_page.dart';
 
 import '../about_us.dart';
