@@ -208,8 +208,8 @@ class _HomePageState extends State<HomePage> {
                               doctorName: 'Dr. Aditya Bhansali',
                               dateTime: 'Mon, Jul 3, 9:00AM to 10:00AM'),
                           UpcomeAppoinList(
-                              imagePath: 'images/doctor6.jpg',
-                              doctorName: 'Dr. Selina Chowdhury',
+                              imagePath: 'images/doctor1.jpg',
+                              doctorName: 'Dr. Partha Bhowmick',
                               dateTime: 'Mon, Jul 10, 9:00AM to 10:00AM'),
                         ],
                       ),
