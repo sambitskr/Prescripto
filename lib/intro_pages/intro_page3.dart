@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
 class IntroPage3 extends StatelessWidget {
@@ -20,10 +21,11 @@ class IntroPage3 extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          const Text(
+          Text(
             '"Confused where your previous \n         prescriptions are?"',
-            style: TextStyle(fontSize: 15, color: Colors.black),
-          )
+            style: GoogleFonts.exo2(
+                fontSize: 15, color: Colors.black, fontWeight: FontWeight.bold),
+          ),
         ],
       ),
     );
