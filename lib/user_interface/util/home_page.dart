@@ -196,21 +196,21 @@ class _HomePageState extends State<HomePage> {
                       Column(
                         children: const [
                           UpcomeAppoinList(
-                              imagePath: 'images/doctor2.jpg',
-                              doctorName: 'Dr. Tapanjyoti Banerjee',
-                              dateTime: 'Sun, Jun 8, 9:00AM to 10:00AM'),
+                              imagePath: 'images/doctor4.jpg',
+                              doctorName: 'Dr. Ravikant Saraogi',
+                              dateTime: 'Thu, Jun 8, 9:00AM to 10:00AM'),
                           UpcomeAppoinList(
                               imagePath: 'images/doctor2.jpg',
                               doctorName: 'Dr. Tapanjyoti Banerjee',
-                              dateTime: 'Sun, Jun 8, 9:00AM to 10:00AM'),
+                              dateTime: 'Mon, Jun 12, 11:00AM to 12:00AM'),
                           UpcomeAppoinList(
-                              imagePath: 'images/doctor2.jpg',
-                              doctorName: 'Dr. Tapanjyoti Banerjee',
-                              dateTime: 'Sun, Jun 8, 9:00AM to 10:00AM'),
+                              imagePath: 'images/doctor5.jpg',
+                              doctorName: 'Dr. Aditya Bhansali',
+                              dateTime: 'Mon, Jul 3, 9:00AM to 10:00AM'),
                           UpcomeAppoinList(
-                              imagePath: 'images/doctor2.jpg',
-                              doctorName: 'Dr. Tapanjyoti Banerjee',
-                              dateTime: 'Sun, Jun 8, 9:00AM to 10:00AM'),
+                              imagePath: 'images/doctor6.jpg',
+                              doctorName: 'Dr. Selina Chowdhury',
+                              dateTime: 'Mon, Jul 10, 9:00AM to 10:00AM'),
                         ],
                       ),
                     ],
