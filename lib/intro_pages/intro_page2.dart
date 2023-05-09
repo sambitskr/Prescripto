@@ -7,7 +7,7 @@ class IntroPage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue,
+      color: Color.fromRGBO(48, 203, 0, 0.5),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -22,7 +22,7 @@ class IntroPage2 extends StatelessWidget {
           ),
           const Text(
             '"Messing up too many prescriptions from\n                     different doctors?"',
-            style: TextStyle(fontSize: 15, color: Colors.white),
+            style: TextStyle(fontSize: 15, color: Colors.black),
           ),
         ],
       ),

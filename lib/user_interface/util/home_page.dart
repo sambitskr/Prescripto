@@ -184,7 +184,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 10,
               ),
               Padding(

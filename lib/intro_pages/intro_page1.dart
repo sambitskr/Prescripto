@@ -7,7 +7,7 @@ class IntroPage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.green,
+      color: Color.fromRGBO(74, 229, 74, 0.5),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -22,7 +22,7 @@ class IntroPage1 extends StatelessWidget {
           ),
           const Text(
             '"Having difficulties in understanding \n                prescription labels?"',
-            style: TextStyle(fontSize: 15, color: Colors.white),
+            style: TextStyle(fontSize: 15, color: Colors.black),
           )
         ],
       ),

@@ -37,7 +37,7 @@ class _SplashPageState extends State<SplashPage> {
             ClipRRect(
                 borderRadius: BorderRadius.circular(100),
                 child: Image.asset(
-                  'images/logo_smol.png',
+                  'images/logo_smol_trans.png',
                   height: 150,
                 )),
             const SizedBox(height: 10),
