@@ -25,7 +25,7 @@ class UpcomeAppoinList extends StatelessWidget {
               child: Image.asset(imagePath, height: 100),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           Column(
@@ -35,7 +35,7 @@ class UpcomeAppoinList extends StatelessWidget {
                 doctorName,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 3,
               ),
               Text(

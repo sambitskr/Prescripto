@@ -84,7 +84,8 @@ class _HomePageState extends State<HomePage> {
                     decoration: InputDecoration(
                         prefixIcon: Icon(Icons.search),
                         border: InputBorder.none,
-                        hintText: 'Search'),
+                        hintText: 'Search',
+                        hintStyle: TextStyle(fontWeight: FontWeight.bold)),
                   ),
                 ),
               ),

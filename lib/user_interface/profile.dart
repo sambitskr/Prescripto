@@ -6,7 +6,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -16,7 +16,7 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
@@ -31,41 +31,41 @@ class ProfilePage extends StatelessWidget {
                 radius: 80.0,
                 backgroundImage: AssetImage('images/Profile.jpg'),
               ),
-              SizedBox(height: 16.0),
-              Text(
+              const SizedBox(height: 16.0),
+              const Text(
                 'Sambit Sarkar',
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Text(
                 'Patient',
                 style: TextStyle(fontSize: 16.0, color: Colors.grey[600]),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               ClipRRect(
                 borderRadius: BorderRadius.circular(30),
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: Text("Edit Profile"),
+                  child: const Text("Edit Profile"),
                   style: ElevatedButton.styleFrom(
-                      minimumSize: Size(150, 50),
+                      minimumSize: const Size(150, 50),
                       backgroundColor: Colors.green),
                 ),
               ),
-              SizedBox(height: 5),
-              Divider(),
-              SizedBox(height: 16.0),
-              ListTile(
+              const SizedBox(height: 5),
+              const Divider(),
+              const SizedBox(height: 16.0),
+              const ListTile(
                 leading: Icon(Icons.email),
                 title: Text('Email'),
                 subtitle: Text('skrsambit@gmail.com'),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.phone),
                 title: Text('Phone'),
                 subtitle: Text('9477110622'),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.location_on),
                 title: Text('Location'),
                 subtitle: Text('82/A Shakespeare Sarani'),

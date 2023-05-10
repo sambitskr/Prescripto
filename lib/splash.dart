@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prescripto/login.dart';
 
 import 'introduction.dart';
 

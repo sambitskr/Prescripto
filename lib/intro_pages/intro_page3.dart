@@ -8,7 +8,7 @@ class IntroPage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromRGBO(15, 146, 0, 0.5),
+      color: const Color.fromRGBO(15, 146, 0, 0.5),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

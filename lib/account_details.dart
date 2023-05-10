@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prescripto/about_us.dart';
-import 'package:prescripto/contact_us.dart';
 
 class AccountDetails extends StatefulWidget {
   const AccountDetails({super.key});
@@ -137,15 +135,7 @@ class _AccountDetailsState extends State<AccountDetails> {
                                 backgroundColor: const Color(0xff4c505b),
                                 child: IconButton(
                                     color: Colors.white,
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const AboutUsPage(),
-                                        ),
-                                      );
-                                    },
+                                    onPressed: () {},
                                     icon: const Icon(
                                       Icons.arrow_forward,
                                     )),
